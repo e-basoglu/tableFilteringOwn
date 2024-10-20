@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.TableViewFilterController" spacing="10" fillWidth="true">
+
+    <!-- Filters Row -->
+    <HBox spacing="5">
+        <TextField fx:id="filterA" promptText="Filter Column A" HBox.hgrow="ALWAYS"/>
+        <TextField fx:id="filterB" promptText="Filter Column B" HBox.hgrow="ALWAYS"/>
+        <TextField fx:id="filterC" promptText="Filter Column C" HBox.hgrow="ALWAYS"/>
+        <TextField fx:id="filterD" promptText="Filter Column D" HBox.hgrow="ALWAYS"/>
+        <TextField fx:id="filterE" promptText="Filter Column E" HBox.hgrow="ALWAYS"/>
+    </HBox>
+
+    <!-- TableView -->
+    <TableView fx:id="tableView" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="columnA" text="Column A" prefWidth="150"/>
+            <TableColumn fx:id="columnB" text="Column B" prefWidth="150"/>
+            <TableColumn fx:id="columnC" text="Column C" prefWidth="150"/>
+            <TableColumn fx:id="columnD" text="Column D" prefWidth="150"/>
+            <TableColumn fx:id="columnE" text="Column E" prefWidth="150"/>
+        </columns>
+    </TableView>
+
+</VBox>
